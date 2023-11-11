@@ -12,7 +12,7 @@ const NoteForm = () => {
     const noteData = route.params?.noteData || {};
 
     const [title, setTitle] = useState(noteData.title || "");
-    const [content, setContent] = useState(noteData.title || "");
+    const [content, setContent] = useState(noteData.content || "");
 
     const handleTitleChange = (text) => {
         setTitle(text);
